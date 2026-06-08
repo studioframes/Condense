@@ -1,0 +1,16 @@
+# Exclude all testing environments and workflows
+tests/
+node_modules/
+.github/
+.env
+
+# Exclude local configuration files
+config/local.json
+*.log
+
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+RELEASES.md
+
+# Exclude ignore files
+.gitignore

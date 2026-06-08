@@ -1,4 +1,4 @@
-# ⚡ Condense
+![logo](https://github.com/user-attachments/assets/a0d89a33-d9f0-42c1-8bca-a6d7cf81551c)
 
 A high-performance, completely stateless file optimization and minification engine for Node.js. Condense handles images, video, audio, and code natively in-memory (RAM) using Buffers and Streams, completely bypassing the local server disk.
 

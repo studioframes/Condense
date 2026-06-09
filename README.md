@@ -1,5 +1,10 @@
 ![logo](https://github.com/user-attachments/assets/a0d89a33-d9f0-42c1-8bca-a6d7cf81551c)
 
+[![npm](https://img.shields.io/npm/v/@studioframes/condense?colorA=006AFF&colorB=000000
+)](https://www.npmjs.com/package/@studioframes/condense)
+[![downloads](https://img.shields.io/npm/dm/@studioframes/condense?colorA=006AFF&colorB=000000
+)](https://www.npmjs.com/package/@studioframes/condense)
+
 A high-performance, completely stateless file optimization and minification engine for Node.js. Condense handles images, video, audio, and code natively in-memory (RAM) using Buffers and Streams, completely bypassing the local server disk.
 
 It can be run as a standalone API server via CLI, mounted inside an existing Express application as a router, or used directly in your codebase via programmatic utility functions.

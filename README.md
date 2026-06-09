@@ -1,10 +1,8 @@
 ![logo](https://github.com/user-attachments/assets/a0d89a33-d9f0-42c1-8bca-a6d7cf81551c)
 
-[![npm](https://img.shields.io/npm/v/@studioframes/condense?colorA=006AFF&colorB=000000
-)](https://www.npmjs.com/package/@studioframes/condense)
-[![downloads](https://img.shields.io/npm/dt/@studioframes/condense?colorA=006AFF&colorB=000000
-)](https://www.npmjs.com/package/@studioframes/condense)
-[![size](https://img.shields.io/bundlephobia/minzip/@studioframes/condense?label=size&colorA=006AFF&colorB=000000)](https://bundlephobia.com/package/@studioframes/condense)
+[![npm](https://img.shields.io/npm/v/@studioframes/condense?logo=npm&colorA=006AFF&colorB=000000)](https://www.npmjs.com/package/@studioframes/condense)
+[![downloads](https://img.shields.io/npm/dt/@studioframes/condense?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAqklEQVR4AeSTUQ6AIAxD1XtwVz0rB9E1UUJiB4Xoh2KyuEDXpw0s08vPIIAY485KSXeQiJQoPM1PI7ITs1qlk+P9fq6xfmU6GlEIAeKNDThr2zlz26YAqM4BBeKaw8cFYFOAFM3hUQRAUIBUzTFfBUBEIJI5ZiUAhBlENsecDIAYEBR6tZoAqmmuowC7NOmStfS58dVTwLX5xJsCLOe5p9gHUQAT9q59H3AAAAD//0447coAAAAGSURBVAMAqW98MRfehzwAAAAASUVORK5CYII=&labelColor=006AFF&color=000000)](https://www.npmjs.com/package/@studioframes/condense)
+[![size](https://img.shields.io/bundlephobia/minzip/@studioframes/condense?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABlUlEQVR4AcRUu0rFQBA14X6DEPK4pFFEBLUQsdJGLOzVQizs/CEbG7Hw/oBYaiMW4qMS4YKRPP4iJJ4RZ9mMGzf3Xh9hD5uZObNnZtjEnfrl5/8FiqJYzrLsDagFXpMkWbQNoLUDHLYO1FVV3eOQPiBX3Ov1HomDItZkkG2jQJ7n5yBcAZ0WiriB0ImJ/EUAxMu6rndNZIvvME3TgeQ0BDDTVRC2gLGW4zg7GNesntwQwExv9aB8D8PQIUi/bmNcL7qtBNDeph6Y5B1jXuB8JYD2ztjZtiPx46q2xTX/Kb8rATimgZ9aS3yQLsC+1p3mT2glGAIjCRjyra4/FRhay+lOeGaq6gC36ICdk+6u6+7zGUogCIJvPzJO6LL7vv/APCVADnShrhfZEl2+g7Is5/S8hgC6eELwAhhrocBBHMfmXwWfiHu+TUS2u+7IOUaBe5Lf6ICDn8QNtm07fu8ryDky8YwCREQn14BDyaguJZ/AEH/feeJEUXQnYspsFWAGJaO6Ph0kMON5nrrvzJe7VUAmjGq/AwAA//8pb4RQAAAABklEQVQDANrLhTF1WycGAAAAAElFTkSuQmCC&label=size&colorA=006AFF&colorB=000000)](https://bundlephobia.com/package/@studioframes/condense)
 
 A high-performance, completely stateless file optimization and minification engine for Node.js. Condense handles images, video, audio, and code natively in-memory (RAM) using Buffers and Streams, completely bypassing the local server disk.
 

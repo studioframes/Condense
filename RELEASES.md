@@ -1,3 +1,45 @@
+# Condense v0.1.1
+
+## Release Summary
+
+This patch release focuses on critical dependency updates and security maintenance for `@studioframes/condense`. The core architectural features—such as stateless, in-memory processing via Buffers and Streams, multi-format pipelines, and flexible integration deployments—remain entirely unchanged.
+
+## Dependency Updates
+
+We have updated underlying packages to patch upstream bugs and optimize installation paths.
+
+* **Updated:** `htmlparser2` bumped from `9.1.0` to `12.0.0`
+* **Updated:** `express` bumped from `4.22.2` to `5.2.1`
+* **Updated:** `sharp` bumped from `0.33.5` to `3.34.5`
+
+## Known Vulnerabilities & Issues
+
+Following an extensive supply-chain security evaluation using Socket, the following genuine behavioral observations and structural considerations are active for this release track:
+
+### 1. Verification of Tree-Level Names (Potential Typosquat)
+
+* **Status:** Under Investigation.
+* **Details:** Automated network heuristics detected a dependency name structure (`camelcase`) deeply embedded within the transitive dependency tree that mirrors highly trafficked upstream assets. While no current malicious payload or backdoor vector has been confirmed, users are advised to audit nested lockfile distributions to verify exact import paths.
+
+### 2. Unmaintained Upstream Core Frameworks
+
+* **Status:** Monitored.
+* **Details:** A core downstream parsing utility (`html-minifier-terser`) continues to operate on a codebase baseline that has not received active maintenance updates from its upstream maintainers in over five years. While functional baseline stability remains intact for standard HTML structures, unresolved architectural edge cases or future engine-level bugs may go unaddressed by the parent project.
+
+## Bugs
+
+If any new bugs or vulnerabilities are found please read and follow the steps carefully inside [SECURITY.md](https://github.com/studioframes/Condense/blob/main/SECURITY.md).
+
+## Installation
+
+Update or install the latest patch version directly from the npm registry:
+
+```bash
+npm install @studioframes/condense@0.1.1
+```
+
+---
+
 # Condense v0.1.0
 
 ## Release Summary

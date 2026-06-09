@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # Upgraded to LTS 22 for modern performance
+          node-version: '22'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Update npm to Latest
@@ -27,12 +27,17 @@ jobs:
       - name: Clean Install Dependencies
         run: npm ci
 
-      # Pipeline Guard: Ensures no unexpected local files or logs make it into the workspace
+      # Hardened Pipeline Guard: Explicitly strips sensitive/ignored files 
+      # from the runner's workspace directory before compiling the tarball.
+      # This provides secondary layered security even if npm configurations shift.
       - name: Pre-Publish Workspace Sanitization
         run: |
+          rm -rf tests/
           rm -f .env*
-          rm -rf debug-logs/
+          rm -rf .github/
+          rm -f config/local.json
+          rm -f *.log
+          rm -f CODE_OF_CONDUCT.md CONTRIBUTING.md RELEASES.md
 
-      # No tokens required. npm cryptographically verifies this runner and signs it with provenance.
       - name: Publish to npm Registry with Provenance
         run: npm publish --access public --provenance

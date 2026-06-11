@@ -16,10 +16,13 @@ It can be run as a standalone API server via CLI, mounted inside an existing Exp
   - Media: MP4, MP3, WAV
   - Images: JPG, PNG, WebP
 
-## Prerequisites
-Media optimization now bundles FFmpeg directly inside the package using `ffmpeg-static`, so you do not need to install `ffmpeg` globally for media workflows.
+## System Requirements
 
-If you are running on an unusual platform not supported by `ffmpeg-static`, you may still need a system FFmpeg installed.
+Condense utilizes modern native binary distributions (`sharp`, `ffmpeg-static`) which compile against updated Node-API architectures. 
+
+* **Minimum Node.js Version:** `20.9.0` (or higher)
+* **Recommended Environments:** Node **20 LTS** or Node **22 LTS**
+* **Forward Compatibility:** Fully supports newer major engine releases (e.g., Node 23, Node 24+).
 
 ## Installation
 

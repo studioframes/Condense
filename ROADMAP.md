@@ -5,7 +5,7 @@ This document outlines the planned evolution of Condense from current release th
 ## Current Release: v0.1.4
 
 **Status:** Production-ready with core features complete
-**Released:** June 2024
+**Released:** June 2026
 
 ### Features
 - ✅ Stateless image optimization (PNG, JPEG, WebP)
@@ -19,9 +19,7 @@ This document outlines the planned evolution of Condense from current release th
 - ✅ Comprehensive test suite
 - ✅ Developer tooling (ESLint, Prettier)
 
----
-
-## v0.2.0 (Early 2025)
+## v0.2.0 (Sep/Oct 2026)
 
 ### Performance & Optimization
 - **Streaming Improvements**
@@ -45,9 +43,7 @@ This document outlines the planned evolution of Condense from current release th
   - Automated dependency updates
   - Performance regression testing
 
----
-
-## v0.5.0 (Mid 2025)
+## v0.5.0 (Nov/Dec 2026)
 
 ### Extended Format Support
 - **Additional Image Formats**
@@ -76,9 +72,7 @@ This document outlines the planned evolution of Condense from current release th
   - Deterministic hash-based cache keys
   - Invalidation strategies
 
----
-
-## v1.0.0 (Late 2025)
+## v1.0.0 (Early 2027)
 
 ### Stability & Maturity
 - **API Stability**
@@ -117,8 +111,6 @@ This document outlines the planned evolution of Condense from current release th
   - Memory usage guarantees documented
   - Concurrent request scalability tested
 
----
-
 ## Beyond v1.0
 
 ### v2.0+ Considerations
@@ -136,8 +128,6 @@ This document outlines the planned evolution of Condense from current release th
   - Bun runtime support investigation
   - Edge runtime (Cloudflare Workers, Vercel Edge)
 
----
-
 ## Community & Contribution
 
 ### Opportunities for Contributors
@@ -153,20 +143,7 @@ This document outlines the planned evolution of Condense from current release th
 - Regular community feedback sessions
 - Release schedule published quarterly
 
----
-
-## Version Support Policy
-
-| Version | Status | Until |
-|---------|--------|-------|
-| 1.0.x | Active Support | 2028-01-01 |
-| 0.5.x | Extended Support | 2026-06-01 |
-| 0.2.x | Security Fixes Only | 2025-12-01 |
-| <0.2.0 | Unsupported | - |
-
 See [SECURITY.md](./SECURITY.md) for detailed security update information.
-
----
 
 ## Feedback & Discussion
 

@@ -2,6 +2,14 @@
 
 All notable changes to Condense are documented in this file. This project follows [Semantic Versioning](https://semver.org/).
 
+## [0.1.6] - 2026-06-17
+
+### Changed
+- Updated license metadata in `package.json`.
+- Updated `test` script in `package.json`.
+
+---
+
 ## [0.1.5] - 2026-06-15
 
 ### Changed

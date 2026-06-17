@@ -1,6 +1,6 @@
 {
   "name": "@studioframes/condense",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "High-performance in-memory stateless file optimization middleware and utility library",
   "main": "src/index.js",
   "bin": {
@@ -28,7 +28,7 @@
     "stateless"
   ],
   "author": "Studio Frames",
-  "license": "Apache",
+  "license": "Apache-2.0",
   "dependencies": {
     "clean-css": "^5.3.3",
     "express": "^5.2.1",

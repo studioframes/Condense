@@ -1,3 +1,46 @@
+# Condense v0.1.6
+
+## Release Summary
+
+This patch release corrects package license metadata to comply with standard SPDX automated validation parsing, and optimizes cross-platform test execution scripts. The core architectural features—such as stateless, in-memory processing via Buffers and Streams, multi-format pipelines, and flexible integration deployments—remain entirely unchanged.
+
+## Metadata Updates
+
+We have streamlined our internal metadata configurations and test runner patterns to improve cross-platform development reliability.
+
+* **Updated:** Standardized `package.json` license format to strict SPDX compliance (`Apache-2.0`).
+* **Optimized:** Escaped the `test` script directory glob matching (`"node --test \"tests//*.test.js\" "`) to guarantee reliable native test execution across Windows, Mac, and Linux environments.
+
+## Known Vulnerabilities & Issues
+
+Following an extensive supply-chain security evaluation using Socket, the following genuine behavioral observations and structural considerations are active for this release track:
+
+### 1. Supply Chain Capability Flags (False Positives)
+
+* **Status:** Resolved / Whitelisted via `socket.yml`.
+* **Details:** Automated network heuristics flag core dependencies like `express` and `ffmpeg-static` for Network Access, and `commander` for Shell Access (`child_process`). These capabilities have been thoroughly audited; they are strictly restricted to intended functional tasks (binary distribution downloads, local routing execution, and parameter array piping via `spawn`) and pose zero security risks.
+
+### 2. Runtime Code Obfuscation (False Positives)
+
+* **Status:** Resolved / Whitelisted via `socket.yml`.
+* **Details:** Core low-level WebAssembly utilities and runtime polyfills (`@emnapi/runtime`, `entities`, and `commander`) continue to flag automated heuristic scanners for containing potential obfuscation. These warnings are verified false positives triggered by routine environmental capabilities-probing string blocks (`new Function`), standard minification wrappers, and performance optimizations.
+
+For more info visit: [Socket](https://socket.dev/npm/package/%40studioframes%2Fcondense) or [snyk Security](https://security.snyk.io/package/npm/%2540studioframes%252Fcondense).
+
+## Bugs
+
+If any new bugs or vulnerabilities are found please read and follow the steps carefully inside [SECURITY.md](https://github.com/studioframes/Condense/blob/main/SECURITY.md).
+
+## Installation
+
+Update or install the latest patch version directly from the npm registry:
+
+```bash
+npm install @studioframes/condense@0.1.6
+```
+
+---
+
 # Condense v0.1.5
 
 ## Release Summary

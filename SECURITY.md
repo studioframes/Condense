@@ -6,8 +6,8 @@ We actively monitor and patch vulnerabilities in `@studioframes/condense`. Pleas
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1.4   | :white_check_mark: |
-| <0.1.4  | :x:                |
+| 0.1.6   | :white_check_mark: |
+| <0.1.6  | :x:                |
 
 ## Our Security Guarantees
 

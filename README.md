@@ -1,6 +1,6 @@
 <div align="center">
 
-![logo](https://github.com/user-attachments/assets/298c3ef0-6903-4f9c-9522-43ba4c3523d0)
+![logo](https://github.com/user-attachments/assets/9738d96c-bcf8-4aa9-a5ff-6771308b2de9)
 
 [![npm](https://img.shields.io/npm/v/@studioframes/condense?colorA=006AFF&colorB=000000)](https://www.npmjs.com/package/@studioframes/condense)
 [![downloads](https://img.shields.io/npm/dt/@studioframes/condense?labelColor=006AFF&color=000000)](https://www.npmjs.com/package/@studioframes/condense)

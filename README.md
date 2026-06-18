@@ -220,4 +220,4 @@ Short explanation: uploads are received into memory (Buffers or Streams), proces
 
 ## License
 
-This project is managed by Studio Frames and is licensed under the Apache License 2.0. See [https://github.com/studioframes/Condense/blob/main/LICENSE](https://github.com/studioframes/Condense/blob/main/LICENSE) for the full text.
+This project is managed by Studio Frames and is licensed under the Apache License 2.0. See [LICENSE](https://github.com/studioframes/Condense/blob/main/LICENSE) for the full text.

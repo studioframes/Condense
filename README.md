@@ -47,10 +47,10 @@ Condense provides fast, in-memory optimization for media and code. It exists to 
 
 | Category | Formats |
 | --- | --- |
-| Images | PNG, JPG, JPEG, WebP |
-| Audio | MP3, WAV |
-| Video | MP4 |
-| Code & Markup | HTML, CSS, JavaScript, JSON |
+| Images | `.png`, `.jpg`, `.jpeg`, `.webp` |
+| Audio | `.mp3`, `.wav` |
+| Video | `.mp4` |
+| Code & Markup | `.html`, `.css`, `.js`, `.json` |
 
 ## Installation
 
@@ -210,9 +210,9 @@ Short explanation: uploads are received into memory (Buffers or Streams), proces
 
 | File Type | Original Size | Optimized Size |
 | --- | ---: | ---: |
-| PNG | 4.2 MB | 1.1 MB |
-| MP4 | 25 MB | 9 MB |
-| HTML | 120 KB | 42 KB |
+| `.png` | 4.2 MB | 1.1 MB |
+| `.mp4` | 25 MB | 9 MB |
+| `.html` | 120 KB | 42 KB |
 
 *These numbers are illustrative. Actual savings vary depending on content, encoding, and chosen optimization method.
 

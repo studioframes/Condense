@@ -2,6 +2,21 @@
 
 All notable changes to Condense are documented in this file. This project follows [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] - 2026-06-18
+
+### Added
+- **Broaden Format Support:** Added AVIF image optimization using `sharp`, SVG minification using `svgo`, and GIF frame optimization via animated WebP conversion.
+- **Intelligent Dynamic Resizing:** Added support for responsive image resizing via `width`, `height`, and `fit` parameters.
+- **Smart Frame Extraction:** Added thumbnailing for video streams to generate a quick WebP keyframe using the `?thumbnail=true` query parameter.
+- **Standard MP4 Faststart:** Support for standard non-fragmented `moov` atom faststart relocation on video streams using `?faststart=true`.
+- **Diagnostics API:** Added a lightweight `/health` metrics route for reporting active CPU load, memory utilization, and uptime.
+
+### Changed
+- Added `svgo` to package dependencies for SVG optimization logic.
+- Updated `terser` from 5.31.1 to 5.48.0
+
+---
+
 ## [0.1.6] - 2026-06-17
 
 ### Changed

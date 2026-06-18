@@ -2,7 +2,7 @@ const test = require('node:test');
 const { optimizeText } = require('../src/services/textService');
 const { assert } = require('./helpers');
 
-test('textService - optimizeText with JavaScript', async (t) => {
+test('textService - optimizeText with JavaScript', async (_t) => {
   const jsCode = `
     function test( ) {
       var x = 10;
@@ -11,13 +11,13 @@ test('textService - optimizeText with JavaScript', async (t) => {
   `;
   const buffer = Buffer.from(jsCode);
   const result = await optimizeText(buffer, 'application/javascript', 'quality');
-  
+
   assert(Buffer.isBuffer(result.buffer), 'Should return a buffer');
   assert(result.outMime === 'application/javascript', 'Should return JS mime');
   assert(result.buffer.length < buffer.length, 'Output should be smaller');
 });
 
-test('textService - optimizeText with CSS', async (t) => {
+test('textService - optimizeText with CSS', async (_t) => {
   const css = `
     body {
       margin: 0;
@@ -26,12 +26,12 @@ test('textService - optimizeText with CSS', async (t) => {
   `;
   const buffer = Buffer.from(css);
   const result = await optimizeText(buffer, 'text/css', 'quality');
-  
+
   assert(Buffer.isBuffer(result.buffer), 'Should return a buffer');
   assert(result.outMime === 'text/css', 'Should return CSS mime');
 });
 
-test('textService - optimizeText with HTML', async (t) => {
+test('textService - optimizeText with HTML', async (_t) => {
   const html = `
     <html>
       <body>
@@ -41,16 +41,16 @@ test('textService - optimizeText with HTML', async (t) => {
   `;
   const buffer = Buffer.from(html);
   const result = await optimizeText(buffer, 'text/html', 'quality');
-  
+
   assert(Buffer.isBuffer(result.buffer), 'Should return a buffer');
   assert(result.outMime === 'text/html', 'Should return HTML mime');
 });
 
-test('textService - optimizeText respects condense-ignore', async (t) => {
-  const html = `<div data-condense-ignore><p>   Keep spaces   </p></div>`;
+test('textService - optimizeText respects condense-ignore', async (_t) => {
+  const html = '<div data-condense-ignore><p>   Keep spaces   </p></div>';
   const buffer = Buffer.from(html);
   const result = await optimizeText(buffer, 'text/html', 'quality');
-  
+
   const output = result.buffer.toString();
   assert(output.includes('   '), 'Should preserve spaces in ignored sections');
 });

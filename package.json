@@ -1,7 +1,7 @@
 {
   "name": "@studioframes/condense",
-  "version": "0.1.6",
-  "description": "High-performance in-memory stateless file optimization middleware and utility library",
+  "version": "0.2.0",
+  "description": "Condense is a high-performance, stateless file optimization and minification engine for Node.js.",
   "main": "src/index.js",
   "bin": {
     "@studioframes/condense": "./bin/cli.js"
@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start": "node bin/cli.js",
+    "build": "echo 'Nothing to build'",
     "test": "node --test tests/**/*.test.js",
     "lint": "eslint src/ bin/ tests/",
     "format": "prettier --write ."
@@ -21,9 +22,6 @@
     "optimize",
     "image",
     "video",
-    "ffmpeg",
-    "sharp",
-    "express",
     "middleware",
     "stateless"
   ],
@@ -37,7 +35,8 @@
     "htmlparser2": "^12.0.0",
     "multer": "^2.2.0",
     "sharp": "^0.35.1",
-    "terser": "^5.31.0"
+    "svgo": "^4.0.1",
+    "terser": "^5.48.0"
   },
   "repository": {
     "type": "git",
@@ -46,5 +45,11 @@
   "bugs": {
     "url": "https://github.com/studioframes/Condense/issues"
   },
-  "homepage": "https://github.com/studioframes/Condense#readme"
+  "homepage": "https://github.com/studioframes/Condense#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.3",
+    "eslint": "^8.57.1",
+    "prettier": "^3.8.4"
+  }
 }

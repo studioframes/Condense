@@ -38,16 +38,19 @@ Condense provides fast, in-memory optimization for media and code. It exists to 
 - **Low-latency:** Optimized for minimal added latency in request/response flows.
 
 ## Features
-- In-memory Buffer & Stream processing (no temporary disk writes)
-- Image, audio, video, and code/markup optimization
+- In-memory Buffer & Stream processing (no temporary disk writes except when explicitly invoking `faststart`)
+- Image (including AVIF & GIF), audio, video, and code/markup (including SVG) optimization
+- Intelligent Dynamic Resizing via `width`, `height`, and `fit` API parameters
+- Video Thumbnail Extraction and Standard MP4 Faststart utilities
 - Express middleware and standalone CLI options
 - Ignore directives to opt-out specific regions or files from minification
+- System Health Diagnostics API (`/health`)
 
 ## Supported Formats
 
 | Category | Formats |
 | --- | --- |
-| Images | `.png`, `.jpg`, `.jpeg`, `.webp` |
+| Images | `.png`, `.jpg`, `.jpeg`, `.webp`, `.avif`, `.gif`, `.svg` |
 | Audio | `.mp3`, `.wav` |
 | Video | `.mp4` |
 | Code & Markup | `.html`, `.css`, `.js`, `.json` |

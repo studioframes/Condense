@@ -2,24 +2,21 @@
 
 This document outlines the planned evolution of Condense from current release through v1.0 and beyond.
 
-## Current Release: v0.1.4
+## Current Release: v0.2.0
 
 **Status:** Production-ready with core features complete
 **Released:** June 2026
 
 ### Features
-- ✅ Stateless image optimization (PNG, JPEG, WebP)
-- ✅ Code/markup minification (HTML, CSS, JS)
-- ✅ Media streaming (MP3, MP4, WAV, WebM)
-- ✅ Granular bypass directives (`data-condense-ignore`)
-- ✅ Standalone CLI server mode
-- ✅ Express middleware integration
-- ✅ Programmatic SDK usage
-- ✅ TypeScript definitions
-- ✅ Comprehensive test suite
-- ✅ Developer tooling (ESLint, Prettier)
+- In-memory Buffer & Stream processing (no temporary disk writes except when explicitly invoking `faststart`)
+- Image (including AVIF & GIF), audio, video, and code/markup (including SVG) optimization
+- Intelligent Dynamic Resizing via `width`, `height`, and `fit` API parameters
+- Video Thumbnail Extraction and Standard MP4 Faststart utilities
+- Express middleware and standalone CLI options
+- Ignore directives to opt-out specific regions or files from minification
+- System Health Diagnostics API (`/health`)
 
-## v0.2.0 (Sep/Oct 2026)
+## v0.3.0 (Sep/Oct 2026)
 
 ### Performance & Optimization
 - **Streaming Improvements**

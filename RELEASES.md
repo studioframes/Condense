@@ -1,3 +1,34 @@
+# Condense v0.2.0
+
+## Release Summary
+
+This minor release introduces major feature enhancements to Condense, focusing on broadening format capabilities and introducing intelligent dynamic options. The core architectural features remain intact, but powerful new capabilities like SVG/AVIF support and video frame extraction are now available.
+
+## Features & Upgrades
+
+* **AVIF and SVG Support:** In-memory optimization now supports modern `.avif` image formats natively, and utilizes `svgo` to securely minify `.svg` vector data.
+* **Intelligent Dynamic Resizing (Responsive Images):** Developers can now pass `width`, `height`, and `fit` parameters (via query string or request body) to crop and scale structural images on-the-fly.
+* **Animated WebP for GIFs:** GIF buffers are now automatically parsed and intelligently optimized into heavily compressed, animated WebP outputs.
+* **Smart Frame Extraction:** Extracts a robust WebP thumbnail keyframe from heavy MP4/video files using the new `?thumbnail=true` query parameter.
+* **Standard MP4 Faststart:** Allows developers to relocate the `moov` atom header inside an MP4 file, drastically decreasing buffering latency for conventional player streaming, available via `?faststart=true` (this feature utilizes a highly secure temporary bridging file when specifically invoked).
+* **Diagnostics Endpoint:** A new `/health` status route provides instance metrics for CPU workload, structural memory limits, and platform statuses to verify robust scaling.
+
+## Dependency Updates
+
+We have updated underlying package to ensure seamless native module compilation.
+
+* **Updated:** `terser` bumped from `5.31.1` to `5.48.0`
+
+## Installation
+
+Update or install the new version directly from the npm registry:
+
+```bash
+npm install @studioframes/condense@0.2.0
+```
+
+---
+
 # Condense v0.1.6
 
 ## Release Summary
@@ -47,7 +78,7 @@ npm install @studioframes/condense@0.1.6
 
 This patch release focuses on optimizing runtime reliability and ensuring engine compatibility for `@studioframes/condense`. The core architectural features—such as stateless, in-memory processing via Buffers and Streams, multi-format pipelines, and flexible integration deployments—remain entirely unchanged.
 
-## Dependency Updates & Engine Requirements
+## Dependency Updates
 
 We have updated underlying package to ensure seamless native module compilation.
 

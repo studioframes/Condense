@@ -106,7 +106,7 @@ Condense can run as a standalone CLI server, be mounted as Express middleware, o
 
 ### Examples
 
-### A. Express Middleware
+#### Express Middleware
 
 ```javascript
 const express = require('express');
@@ -122,7 +122,7 @@ app.listen(8080, () => {
 });
 ```
 
-### B. Programmatic Helper SDK
+#### Programmatic Helper SDK
 
 ```javascript
 const { optimizeImage, optimizeText, optimizeMediaStream } = require('@studioframes/condense');
@@ -141,10 +141,12 @@ const { stream, outMime: mediaMime } = optimizeMediaStream(rawVideoBuffer, 'vide
 
 Use ignore directives to prevent minification for a file or a specific region.
 
-- HTML: add `data-condense-ignore` to any element (or `<html>` to ignore the whole document).
-- JS/CSS: add the comment `/* condense-ignore */` anywhere in the file to bypass minification.
+- `html`: add `data-condense-ignore` to any element (or `<html>` to ignore the whole document).
+- `js`/`css`: add the comment `/* condense-ignore */` anywhere in the file to bypass minification.
 
-Example (HTML):
+### Examples
+
+#### `html`
 
 ```html
 <div data-condense-ignore>
@@ -154,7 +156,7 @@ Example (HTML):
 </div>
 ```
 
-Example (JS):
+#### `js`
 
 ```javascript
 /* condense-ignore */
@@ -164,7 +166,7 @@ function legacyCode() {
 }
 ```
 
-Example (CSS):
+#### `css`
 
 ```css
 /* condense-ignore */

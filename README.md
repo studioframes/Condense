@@ -1,9 +1,10 @@
 <div align="center">
 
-![logo](https://github.com/user-attachments/assets/9738d96c-bcf8-4aa9-a5ff-6771308b2de9)
+![logo](https://github.com/user-attachments/assets/3d1be3e4-b7b8-4802-9aed-cdbfe80cca0f)
 
-[![npm](https://img.shields.io/npm/v/@studioframes/condense?colorA=006AFF&colorB=000000)](https://www.npmjs.com/package/@studioframes/condense)
-[![downloads](https://img.shields.io/npm/dt/@studioframes/condense?labelColor=006AFF&color=000000)](https://www.npmjs.com/package/@studioframes/condense)
+[![npm](https://img.shields.io/npm/v/@studioframes/condense?colorA=FF0000&colorB=030201)](https://www.npmjs.com/package/@studioframes/condense)
+[![downloads](https://img.shields.io/npm/dt/@studioframes/condense?labelColor=FF0000&color=030201)](https://www.npmjs.com/package/@studioframes/condense)
+[![License](https://img.shields.io/badge/License-Apache-fff.svg?labelColor=FF0000&color=030201)](./LICENSE)
 
 **Condense is a high-performance, stateless file optimization and minification engine for [Node.js](https://nodejs.org). It optimizes images, audio, video, and code entirely in-memory using Buffers and Streams, and avoids writing temporary files to disk.**
 

@@ -1,3 +1,25 @@
+# Condense v0.2.2
+
+## Release Summary
+
+This patch release focuses on optimizing runtime reliability and ensuring engine compatibility for `@studioframes/condense`. The core architectural features—such as stateless, in-memory processing via Buffers and Streams, multi-format pipelines, and flexible integration deployments—remain entirely unchanged.
+
+## Dependency Updates
+
+We have updated underlying package to ensure seamless native module compilation.
+
+* **Updated:** `sharp` bumped from `0.35.1` to `0.35.2`
+
+## Installation
+
+Update or install the new version directly from the npm registry:
+
+```bash
+npm install @studioframes/condense@0.2.2
+```
+
+---
+
 # Condense v0.2.1
 
 ## Release Summary

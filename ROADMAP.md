@@ -2,7 +2,7 @@
 
 This document outlines the planned evolution of Condense from current release through v1.0 and beyond.
 
-## Current Release: v0.2.0
+## Current Release: v0.2.2
 
 **Status:** Production-ready with core features complete
 **Released:** June 2026

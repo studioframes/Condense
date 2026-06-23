@@ -187,8 +187,8 @@ POST `/optimize`
 
 ### Example Request:
 ```bash
-curl -X POST http://localhost:3000/v1/optimize \
-  -F "file=@./photo.png" \
+curl -X POST http://localhost:3000/optimize \
+  -F "file=@./photo.png;type=image/png" \
   -F "method=extreme" \
   --output photo-condensed.webp
 ```

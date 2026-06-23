@@ -216,6 +216,7 @@ curl -X POST http://localhost:3000/v1/optimize \
 ┌───────────────┐
 │   Response    │
 └───────────────┘
+```
 
 Short explanation: uploads are received into memory (Buffers or Streams), processed by Condense in-memory, and returned as an optimized Buffer or Stream without intermediate disk writes.
 

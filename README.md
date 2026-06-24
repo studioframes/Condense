@@ -222,22 +222,21 @@ Short explanation: uploads are received into memory (Buffers or Streams), proces
 
 ## Benchmarks
 
-Below are the benchmark results of processing our sample suite through the `Condense` pipeline using the `extreme` compression method. See [`demo`](https://github.com/studioframes/Condense/tree/main/demo) directory to learn more.
+Below are the benchmark results of processing our sample suite through the `Condense` pipeline using the standard `quality` method, and the aggressive `extreme` method. See [`demo`](https://github.com/studioframes/Condense/tree/main/demo) directory to learn more.
 
-| File Type | Original Size | Condensed Size | Reduction |
-| :--- | :--- | :--- | :--- |
-| **JavaScript** (`app.js`) | 5.07 KB _(5,071 B)_ | 1.39 KB _(1,393 B)_ | **-72.5%** |
-| **JSON Data** (`data.json`) | 0.48 KB _(490 B)_ | 0.36 KB _(364 B)_ | **-25.7%** |
-| **HTML Page** (`index.html`) | 2.36 KB _(2,421 B)_ | 1.52 KB _(1,552 B)_ | **-35.9%** |
-| **CSS Styles** (`styles.css`) | 1.00 KB _(1,020 B)_ | 0.63 KB _(649 B)_ | **-36.4%** |
-| **SVG Graphic** (`demo.svg`) | 216.99 KB _(222,198 B)_ | 119.30 KB _(122,162 B)_ | **-45.0%** |
-| **PNG Image** (`demo.png`) | 116.00 KB | 28.00 KB _(WebP)_ | **-75.8%** |
-| **MP4 Video** (`demo.mp4`) | 32.00 KB | 28.00 KB | **-12.5%** |
+| File Type | Original Size | Quality Size | Extreme Size | Max Reduction |
+| --- | --- | --- | --- | --- |
+| **JavaScript** (`app.js`) | 5.07 KB *(5,071 B)* | 1.75 KB *(1,794 B)* | 1.39 KB *(1,393 B)* | -72.5% |
+| **JSON Data** (`data.json`) | 0.48 KB *(490 B)* | 0.36 KB *(364 B)* | 0.36 KB *(364 B)* | -25.7% |
+| **HTML Page** (`index.html`) | 2.36 KB *(2,421 B)* | 1.60 KB *(1,637 B)* | 1.52 KB *(1,552 B)* | -35.9% |
+| **CSS Styles** (`styles.css`) | 1.00 KB *(1,020 B)* | 0.68 KB *(698 B)* | 0.63 KB *(649 B)* | -36.4% |
+| **SVG Graphic** (`demo.svg`) | 216.99 KB *(222,198 B)* | 119.52 KB *(122,388 B)* | 119.30 KB *(122,162 B)* | -45.0% |
+| **PNG Image** (`demo.png`) | 116.00 KB | 34.00 KB *(WebP)* | 28.00 KB *(WebP)* | -75.8% |
+| **MP4 Video** (`demo.mp4`) | 32.00 KB | 30.00 KB | 28.00 KB | -12.5% |
 
 ## System Requirements
 
 - Minimum Node.js: >= 20.9
-- Uses native binaries (`sharp`, `ffmpeg-static`) where applicable
 
 ## License
 

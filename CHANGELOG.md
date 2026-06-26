@@ -2,6 +2,12 @@
 
 All notable changes to Condense are documented in this file. This project follows [Semantic Versioning](https://semver.org/).
 
+## [0.3.1] - 2026-06-26
+
+### Changed
+- **Removed:** `demo` directory from package.
+- **Removed:** `COMMANDS.md` file from package.
+
 ## [0.3.0] - 2026-06-26
 
 ### Added

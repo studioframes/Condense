@@ -1,3 +1,24 @@
+# Condense v0.3.1
+
+## Release Summary
+
+This patch release focuses on optimizing runtime speed for `@studioframes/condense`. The core architectural features—such as stateless, in-memory processing via Buffers and Streams, multi-format pipelines, and flexible integration deployments—remain entirely unchanged.
+
+## Removals
+
+We have removed the directories and files that were accidentally left inside the pacakge.
+
+- **Removed:** `demo` directory from package.
+- **Removed:** `COMMANDS.md` file from package.
+
+## Installation
+
+Update or install the new version directly from the npm registry:
+
+```bash
+npm install @studioframes/condense@0.3.1
+```
+
 # Condense v0.3.0
 
 ## Release Summary

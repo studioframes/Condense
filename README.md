@@ -184,7 +184,7 @@ Use ignore directives to prevent minification for a file or a specific region.
 </div>
 ```
 
-#### `js` or `ts`
+#### `js`/`ts`
 
 ```javascript
 /* condense-ignore */

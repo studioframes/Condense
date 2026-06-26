@@ -153,8 +153,13 @@ async function optimizeText(buffer, mimeType, method) {
       output = result.data;
     } else if (mimeType === 'application/xml' || mimeType === 'text/xml') {
       // --- XML ---
-      // Strip XML comments
-      output = input.replace(/<!--[\s\S]*?-->/g, '');
+      // Strip XML comments (repeat until stable to avoid incomplete multi-character sanitization)
+      output = input;
+      let previousOutput;
+      do {
+        previousOutput = output;
+        output = output.replace(/<!--[\s\S]*?-->/g, '');
+      } while (output !== previousOutput);
       // Collapse whitespace between tags
       output = output.replace(/>\s+</g, '><');
       if (isExtreme) {

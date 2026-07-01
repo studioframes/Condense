@@ -9,7 +9,7 @@ We actively monitor and patch vulnerabilities in `@studioframes/condense`. Pleas
 | 0.3.3   | :white_check_mark: |       |
 | 0.3.2   | :white_check_mark: |   *    |
 | 0.3.1   | :x: | Unsupported due to the version containing security vulnerabilities that have been patched in [v0.3.2](https://github.com/studioframes/Condense/releases/tag/v0.3.2) |
-| 0.3.0   | :white_check_mark: |   *    |
+| 0.3.0   | :x: | Unsupported due to the version containing security vulnerabilities that have been patched in [v0.3.2](https://github.com/studioframes/Condense/releases/tag/v0.3.2) |
 | 0.2.x   | :white_check_mark: |   *    |
 | 0.1.x   | :x: | Deprecated |
 
